@@ -1,7 +1,7 @@
 # LB_for_BNNs
 Laplace Bridge for Bayesian Neural Networks
 
-Anonymized github repository associated with the paper "Fast Predictive Uncertainty For Classification Bayesian Deep Networks" currently under review at ICLR 2021. 
+Anonymized github repository associated with the paper "Fast Predictive Uncertainty For Classification Bayesian Deep Networks" currently under review at ICML 2021. 
 
 All files are supposed to be stand-alone notebooks so you can look at different experiments independent of each other.
 
@@ -27,4 +27,4 @@ The experiment on ImageNet is conducted here. If you don't have the training and
 
 ### Applying the Laplace Bridge to other use cases
 
-If you want to apply the Laplace Bridge to your own datasets this repository should include all necessary components. Applying a last-layer Laplace approximation to a network is very simple since most classifiers have a linear last layer. There are many references in the original paper showing that a last-layer Laplace approximation is nearly as good as a full layer one at the fraction of a cost. so don't worry about losing too much quality of your prediction. Using the code in LB_utils.py you can easily create the approximations of the Hessian to your last layer and use them for your predictions. I would generally recommend to use the CIFAR10 experiments as a guiding notebook if you can't quite follow what's going on - they are commented in more detail.   
+If you want to apply the Laplace Bridge to your own datasets this repository should include all necessary components. Applying a last-layer Laplace approximation to a network is very simple since most classifiers have a linear last layer. There are many references in the original paper showing that a last-layer Laplace approximation is nearly as good as a full layer one at the fraction of a cost. so don't worry about losing too much quality of your prediction. Using the code in LB_utils.py you can easily create the approximations of the Hessian to your last layer and use them for your predictions. I would generally recommend to use the CIFAR10 experiments as a guiding notebook if you can't quite follow what's going on - they are commented in more detail.
